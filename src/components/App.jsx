@@ -27,7 +27,7 @@ class App extends Component {
   
 
   const searchContact = this.state.contacts.find(contact =>
-    contact.name.toLowerCase().includes(name.toLowerCase()))
+    contact.name.toLowerCase() === (name.toLowerCase()))
 
     searchContact
       ? alert(`${name} is already in contacts`)
